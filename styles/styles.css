@@ -39,7 +39,7 @@ aside {
 }
 
 aside img {
-    width: 200;
+    width: 200px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -49,9 +49,6 @@ aside img {
 
 footer {
     margin: 15px 0;
-    border-top: 1px dotted #000
-}
-
-footer p {
+    border-top: 1px dotted #000;
     text-align: center;
 }
