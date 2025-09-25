@@ -4,19 +4,38 @@
     box-sizing: border-box;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
 nav {
     background-color: darkolivegreen;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: whitesmoke;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: darkolivegreen;
+    border-bottom: #000;
 }
 
 main img {
@@ -34,15 +53,13 @@ p {
     padding: 0;
 }
 
-main {
-    max-width: 420px;
-}
-
 aside {
-    width: 403px;
+    width: 20rem;
     text-align: center;
     color: #fff;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -57,7 +74,7 @@ aside img {
 aside h2 {
     position: absolute;
     top: 25px;
-    left: 112px;
+    left: 70px;
     color: #fff;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #000;
@@ -65,12 +82,9 @@ aside h2 {
 }
 
 footer {
-    margin: 15px 0;
     border-top: 1px dotted #000;
     text-align: center;
 }
-
-ul {}
 
 /* Class Selectors */
 
@@ -81,4 +95,9 @@ ul {}
     outline: 1px solid #000;
     background-color: darkolivegreen;
     color: #000;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
