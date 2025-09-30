@@ -25,6 +25,12 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 600px 1fr 1fr;
+    align-items: center;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -50,6 +56,20 @@ article {
     padding: 8px;
 }
 
+figure img {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    flex: 1 1 auto;
+    gap: 25px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -67,4 +87,9 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
 }
